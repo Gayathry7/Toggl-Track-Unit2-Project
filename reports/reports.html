@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggl Track</title>
+    <link href="reports.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class = "reports__container">
+        <div class = "reports__nav">
+            <div class= "reports__nav__top">
+                <span class = "reports__nav__top__strong"><strong>Reports</strong></span>
+                <span><a href="#">Summary</a></span>
+                <span><a href="#">Detailed</a></span>
+                <span><a href="#">Weekly</a></span>
+                <span class="material-icons reports__export">
+                    get_app
+                </span>
+                <span class="material-icons reports__save">
+                    save
+                </span>
+            </div>
+            <div class = "reports__nav__bottom">
+                <span>Filter by:</span>
+                <span class = "reports__nav__bottom__team">
+                    <img src= "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4IiBjbGFzcz0iY3NzLTE4ZWloZDUtc3BhY2luZ1JpZ2h0Ij48ZyBmaWxsPSJub25lIj48cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSI0IiBmaWxsPSIjOTU4OTliIi8+PHBhdGggZD0iTTExLjEgMTAuMkMxMS41IDExLjIgMTEuOSAxMS45IDExLjkgMTMgMTEuOSAxNC42IDExIDE1IDExIDE1TDEzLjUgMTVDMTQuMyAxNSAxNSAxNC4zIDE1IDEzLjUgMTUgMTMuNSAxNSAxMy44IDE1IDEzLjEgMTUgMTEuMSAxMyAxMC44IDEzIDEwLjEgMTMgOC45IDE0LjIgOS4yIDE0LjIgNy4zIDE0LjIgNi4xIDEzLjQgNC45IDEyIDQuOSAxMC41IDQuOSA5LjggNi4xIDkuOCA3LjMgOS44IDguOSAxMC42IDkuMiAxMS4xIDEwLjJaTTUuMyA4LjhDNS4zIDEwLjcgMyAxMCAzIDEzLjEgMyAxMy44IDMgMTMuMSAzIDEzLjEgMyAxNC4xIDMuOSAxNSA1IDE1TDguNSAxNUM5LjYgMTUgMTAuNSAxNC4xIDEwLjUgMTMuMSAxMC41IDEzLjEgMTAuNSAxMy44IDEwLjUgMTMuMSAxMC41IDEwIDguMiAxMC43IDguMiA4LjggOC4yIDggOS4zIDggOS4zIDUuNyA5LjMgNC41IDguNiAzIDYuOCAzIDQuOSAzIDQuMiA0LjUgNC4yIDUuNyA0LjIgOCA1LjMgOCA1LjMgOC44WiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4="/>
+                    <a  class = "reports__nav__bottom__team__a">Team</a>
+                    <div class = "reports__teamMenu">
+                        <div class = "nav__bottom__menuSearch">
+                            <span class="material-icons" style = "font-size: 10px">
+                                search
+                            </span>
+                            <input class = "nav__bottom__menuInput" type = "text" placeholder="Find members or groups..."/>
+                        </div>
+                        <!-- <div><strong>No matching items</strong></div> -->
+                        <!-- <div class = "teamMenu__header">
+                            <span>MEMBER</span>
+                            <span>ALL</span>
+                            <span>NONE</span>
+                        </div>
+                        <div class = "teamMenu__list">
+                            <input type = "checkbox" id = "teamMenu__member">
+                            <label for = "teamMenu__member">User</label>
+                        </div>
+                        <div class = "nav__bottom__menubreak"></div>
+                        <div class = "teamMenu__footer">
+                            <span>SHOW</span>
+                            <span>Active</span>
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </div> -->
+                    </div>
+                </span>
+                <span class = "reports__nav__bottom__client">
+                    <img src = "client.svg"/>
+                    <a class = "reports__nav__bottom__client__a">Client</a>
+                    <div class = "reports__clientMenu">
+                        <div class = "nav__bottom__menuSearch">
+                            <span class="material-icons" style = "font-size: 10px">
+                                search
+                            </span>
+                            <input class = "nav__bottom__menuInput" type = "text" placeholder="Find clients..."/>
+                        </div>
+                        <div><strong>No matching items</strong></div>
+                    </div>
+                </span>
+                <span class = "reports__nav__bottom__project">
+                    <img src = "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iY3NzLTE4ZWloZDUtc3BhY2luZ1JpZ2h0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0iIzk1ODk5YiIgcng9IjQiLz48ZyBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMyA5aDEydjQuMDAyQTIuMDA1IDIuMDA1IDAgMCAxIDEyLjk5MSAxNUg1LjAxQTIuMDA2IDIuMDA2IDAgMCAxIDMgMTMuMDAyVjl6TTMgNS4wMDVDMyAzLjg5OCAzLjg5OCAzIDQuOTk4IDNoMi4wMDRDOC4xMDYgMyA5IDMuODk0IDkgNS4wMDVWOEgzVjUuMDA1eiIvPjxwYXRoIGQ9Ik0zIDYuNUMzIDUuNjcyIDMuNjggNSA0LjQ5NiA1aDkuMDA4QzE0LjMzIDUgMTUgNS42NjYgMTUgNi41VjhIM1Y2LjV6Ii8+PC9nPjwvZz48L3N2Zz4="/>
+                    <a class = "reports__nav__bottom__project__a">Project</a>
+                    <div class = "reports__projectMenu">
+                        <div class = "nav__bottom__menuSearch">
+                            <span class="material-icons" style = "font-size: 10px">
+                                search
+                            </span>
+                            <input class = "nav__bottom__menuInput" type = "text" placeholder="Find project..."/>
+                        </div>
+                        <div><strong>No matching items</strong></div>
+                        <!-- <div class = "nav__bottom__menubreak"></div> -->
+                    </div>
+                </span>
+                <span class = "reports__nav__bottom__tag">  
+                    <img src = "tag.svg">
+                    <a class = "reports__nav__bottom__tag__a">Tag</a>
+                    <div class = "reports__tagMenu">
+                        <div class = "nav__bottom__menuSearch"> 
+                            <span class="material-icons" style = "font-size: 10px">
+                                search
+                            </span>
+                            <input class = "nav__bottom__menuInput" type = "text" placeholder="Find tags..."/>
+                        </div>
+                        <div><strong>No matching items</strong></div>
+                    </div>
+                </span>
+                <span class = "reports__nav__bottom__description">
+                    <img src = "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iY3NzLTE4ZWloZDUtc3BhY2luZ1JpZ2h0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0iIzk1ODk5YiIgcng9IjQiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNy41MjQgMTNsLS4zNDgtMS41NDhINS4yNjhMNC45MiAxM0gzbDIuMDY0LTguNDk2aDIuNDEyTDkuNTI4IDEzSDcuNTI0ek02LjI1MiA2LjM1MmgtLjA0OGwtLjcyIDMuNjEyaDEuNDUybC0uNjg0LTMuNjEyek0xMy4zNzYgMTAuMjY0aC0uMzM2Yy0uMTM2IDAtLjI2OC4wMTItLjM5Ni4wMzZhLjg0MS44NDEgMCAwIDAtLjMzNi4xMzguNzMuNzMgMCAwIDAtLjIyOC4yNjQuODk3Ljg5NyAwIDAgMC0uMDg0LjQxNGMwIC4yNDguMDU0LjQzLjE2Mi41NDZhLjUxNC41MTQgMCAwIDAgLjM5LjE3NGMuMTQ0IDAgLjI3LS4wMzYuMzc4LS4xMDhhLjc5NS43OTUgMCAwIDAgLjI1OC0uMjgyIDEuNDUgMS40NSAwIDAgMCAuMTQ0LS4zOTZjLjAzMi0uMTQ4LjA0OC0uMjk0LjA0OC0uNDM4di0uMzQ4em0uMDYgMS45NTZjLS4wOC4yOC0uMjM4LjUwNi0uNDc0LjY3OC0uMjM2LjE3Mi0uNTQyLjI1OC0uOTE4LjI1OC0uMTg0IDAtLjM3Mi0uMDMyLS41NjQtLjA5NmExLjQ0OCAxLjQ0OCAwIDAgMS0uNTI4LS4zMTggMS42ODggMS42ODggMCAwIDEtLjM5Ni0uNTg4Yy0uMTA0LS4yNDQtLjE1Ni0uNTQ2LS4xNTYtLjkwNiAwLS40MzIuMDc4LS43ODguMjM0LTEuMDY4LjE1Ni0uMjguMzYtLjUwNC42MTItLjY3Mi4yNTItLjE2OC41MzgtLjI4Ni44NTgtLjM1NC4zMi0uMDY4LjY0NC0uMTAyLjk3Mi0uMTAyaC4yNHYtLjA5NmMwLS4zMDQtLjA3LS41MjQtLjIxLS42Ni0uMTQtLjEzNi0uMzI2LS4yMDQtLjU1OC0uMjA0YTEuMjggMS4yOCAwIDAgMC0uNjMuMTU2Yy0uMTg4LjEwNC0uMzUuMjM2LS40ODYuMzk2bC0uODI4LTEuMTUyYy4yNTYtLjMwNC41NzQtLjU0Ljk1NC0uNzA4LjM4LS4xNjguNzU4LS4yNTIgMS4xMzQtLjI1Mi40MjQgMCAuNzg0LjA2NCAxLjA4LjE5Mi4yOTYuMTI4LjUzNi4zMTYuNzIuNTY0LjE4NC4yNDguMzE2LjU1LjM5Ni45MDYuMDguMzU2LjEyLjc2Ni4xMiAxLjIzVjEzSDEzLjQ2di0uNzhoLS4wMjR6Ii8+PC9nPjwvc3ZnPg=="/>
+                    <a class = "reports__nav__bottom__description__a">Description</a>
+                    <div class = "reports__descriptionMenu">
+                        <div class = "nav__bottom__menuSearch">
+                            <span class="material-icons" style = "font-size: 10px">
+                                search
+                            </span>
+                            <input class = "nav__bottom__menuInput" type = "text" placeholder="Find description..."/>
+                        </div>
+                        <div>
+                            <input type = "checkbox" id = "reports__descriptionMenu__checkbox" value = "Without description"/>
+                            <label for = "reports__descriptionMenu__checkbox">Without description</label>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class = "reports__content">
+            <div class = "reports__content__container">
+                <img src = "https://web-assets.toggl.com/app/assets/images/boxes.8839c2e0.png" alt = "empty boxes">
+                <p class = "reports__content__font24">Just some empty boxes here</p>
+                <div class = "reports__content__grey">Try a different data range or filters.</div>
+                <div class = "reports__content__grey">Still nothing? Go ahead and track some time.</div>
+            </div>
+        </div>
+        <!-- <div class = "reports__chat">
+            
+        </div> -->
+    </div>
+    <script src = "reports.js"></script>
+</body>
+</html>
