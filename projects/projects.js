@@ -1,3 +1,14 @@
+var localData = JSON.parse(localStorage.getItem("projectList"))
+if(localData == null)
+{
+    localStorage.setItem("projectList", JSON.stringify([]))
+}
+else if(localData.length != 0 )
+{
+    document.querySelector(".projects__content").style.display = "none"
+    showProjects()
+}
+
 document.querySelector(".reports__nav__bottom__team").addEventListener("click", teamSearch)
 document.querySelector(".reports__nav__bottom__client").addEventListener("click", clientSearch)
 document.querySelector(".reports__nav__bottom__project").addEventListener("click", projectSearch)
@@ -80,15 +91,7 @@ function popup__submit()
     
         var get = JSON.parse(localStorage.getItem("projectList"))
     
-        if(get == undefined)
-        {
-            var get = []
-            get.push({projectName : projectName, team : team, client : client})
-        }
-        else
-        {
-            get.push({projectName : projectName , team : team, client : client})
-        }
+        get.push({projectName : projectName , team : team, client : client})
         localStorage.setItem("projectList", JSON.stringify(get))
     
         var popup = document.querySelector(".popup__container")
@@ -126,7 +129,7 @@ function showProjects()
             <div class = "projectList__client">${e.client}</div>
             <div class = "projectList__status">0 h</div>
             <div class = "projectList__team">${e.team}</div>
-            <button class = "projectList__delete" onclick = popupListItem__delete(${i})>DELETE</button>
+            <button class = "projectList__delete" onclick = popupListItem__delete(${i})>DELETE</button> 
         </div>
         `
     })
@@ -143,3 +146,5 @@ function popupListItem__delete(e)
 
     showProjects()
 }
+
+
