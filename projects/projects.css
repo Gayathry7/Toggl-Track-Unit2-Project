@@ -3,6 +3,9 @@ body{
     min-width: 850px;
     background-color: #FEF9F8;
 }
+.projects__container{
+    margin-left:180px;
+}
 .font16{
     font-size: 16px;
     line-height: 30px;
@@ -16,7 +19,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: white;
     position:fixed;
-    width:100%;
+    width:88vw;
     min-width: 850px;
     top:0;
 }
@@ -41,6 +44,7 @@ body{
     color:white;
     border-radius:10px;
     outline:none;
+    margin-right: 50px;
 }
 .projects__nav__top__btn:hover{
     background-color: #c463ba;

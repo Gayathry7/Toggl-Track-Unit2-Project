@@ -2,6 +2,9 @@ body{
     margin:0px;
     min-width: 850px;
 }
+.reports__container{
+    margin-left: 180px;
+}
 .reports__nav{
     font-size :14px;
     color: #7B7B7B;
