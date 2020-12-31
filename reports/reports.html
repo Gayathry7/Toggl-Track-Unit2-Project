@@ -6,11 +6,15 @@
     <title>Toggl Track</title>
     <link href="reports.css" rel="stylesheet">
     <link rel="stylesheet" href="nav.css">
+    <link href="chatbox.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
     <div class="nav__container" id="nav__container">
@@ -272,11 +276,35 @@
                 <div class = "reports__content__grey">Try a different data range or filters.</div>
                 <div class = "reports__content__grey">Still nothing? Go ahead and track some time.</div>
             </div>
+            <div class = "reports__actual__content" >
+                <div class = "reports__barChart__container">
+                    <canvas id="reports__barChart"></canvas>
+                </div>
+            </div>
         </div>
-        <!-- <div class = "reports__chat">
-            
-        </div> -->
     </div>
+
+    <button class = "scrollUp__btn">
+        Back to top
+    </button>
+    <div class = "chatbox__unreveal">
+        <div class = "chatbox__header">
+            <img src = "https://raw.githubusercontent.com/toggl-open-source/toggldesktop/gh-pages/assets/toggl-track-wide.png" class = "chatbox__logo">
+            <h1>Hi User  👋</h1>
+            <!-- <p>Ask us anything or share your feedback.</p>
+            <p>Our replies will also be sent to your email.</p> -->
+        </div>
+        <div class = "chatbox__one"></div>
+        <div class = "chatbox__two"></div>
+        <div class = "chatbox__three"></div>
+        <div class = "chatbox__four"> </div>
+    </div>
+    <div class = "chatbox__btn">
+        <img src = "chat_icon.svg" class = "chatbox__icon">
+    </div>
+
+
+    <script src = "chatbox.js"></script>
     <script src = "reports.js"></script>
     <script src="nav.js"></script>
 </body>

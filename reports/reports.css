@@ -118,10 +118,6 @@ body{
     color: #7B7B7B;
     margin:1px;
 }
-/* .reports__chat{
-    position:relative;
-    width:100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #412A4C;
-} */
+.reports__barChart__container{
+    margin:20px 100px;
+}
