@@ -72,3 +72,24 @@ window.onclick = function(event){
         }
     }
 }
+
+
+var myChart = document.getElementById("reports__barChart").getContext("2d")
+
+var barChart = new Chart(myChart, {
+    type: 'bar',
+
+    data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+            backgroundColor: "#6ACCF9",
+            data: [3, 6, 5, 2, 9, 8, 10]
+        }]
+    },
+
+    options: {
+        legend: {
+            display : false,
+        }
+    }
+});
