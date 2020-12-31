@@ -1,9 +1,10 @@
 var toggl__chatbox = document.querySelector(".chatbox__btn")
 toggl__chatbox.addEventListener("click", showChatbox)
+var src = document.querySelector(".chatbox__icon").src 
 
 function showChatbox(){
     document.querySelector(".chatbox__unreveal").classList.toggle("chatbox__reveal")
-    if(document.querySelector(".chatbox__icon").src == "http://127.0.0.1:5501/chatbox/chat_icon.svg")
+    if(document.querySelector(".chatbox__icon").src == src)
     {
         document.querySelector(".chatbox__icon").src = "down_arrow.svg"
     }

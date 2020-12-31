@@ -2,6 +2,9 @@ body{
     margin:0px;
     min-width: 850px;
 }
+.insights__container{
+    margin-left: 180px;
+}
 .insights__content{
     text-align: center;
     width:360px;

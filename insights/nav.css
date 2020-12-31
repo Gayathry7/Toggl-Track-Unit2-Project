@@ -119,6 +119,9 @@
     .nav__container {
         width: 55px;
     }
+    .insights__container{
+        margin-left:55px;
+    }
     .nav__container__flexbox>div {
         display: none;
     }
