@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clients</title>
+
+    <link rel="stylesheet" href="clients.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body>
+
+    <nav>
+
+        <p>Clients</p>
+
+        <div class="client__input">
+            <i class='fas fa-search' style='font-size:16px;color:gray'></i>
+            <input type="text" placeholder="Find client..."/>
+        </div>
+
+        <!-- Trigger/Open The Modal -->
+        <button class="client__new" id="client__newBtn">
+            <i class='fas fa-plus' style='font-size:15px;color:white'></i>
+             New Client
+        </button>
+
+    </nav>
+
+    <div class="client__listBackground">
+        <table class="client__list" >
+
+            <tr>
+                <td>All</td>
+            </tr>
+    
+            <tr id="client__list">
+    
+            </tr>
+        </table>
+    </div>
+    
+    
+
+    <!-- The Modal -->
+    <div id="client__myModal" class="client__modal">
+
+        <!-- Modal content -->
+        <div class="client__modal-content">
+          <span class="client__close">&times;</span>
+          <p>New Client</p>
+      
+          <form  id="client__Inputform">
+              <input id="client__Newinput" type="text" placeholder="Client Name..." />
+              <p id="client__alert"></p>
+          </form>
+
+            <button onclick="myFunction()">Create</button>
+        </div>
+    
+    </div>
+    <div id="snackbar"><span id="snackbarSpan">Success!</span> <br/> Client created Successfully</div>
+
+
+    
+
+    <div class="client__imgBox" id="client__imgBox">
+        <div class="client__imgContent">
+            <img src="https://web-assets.toggl.com/app/assets/images/boxes.8839c2e0.png" alt="Empty boxes" class="client__imgContent">
+            <h2 class="client__imgHead"><span>Just some empty boxes here</span></h2>
+            <div class="client__imgPara"><span>Clients help you organize and filter your projects.</span></div>
+            <div><span>Switch to a different workspace or click New client to get started.</span></div>
+        </div>
+    </div>
+
+    <script src="clients.js"></script>
+
+    
+</body>
+</html>
