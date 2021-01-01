@@ -1,0 +1,58 @@
+.timerSubBar{
+    background-color: white;
+    box-shadow: 2px 1px 3px 1px rgb(207, 205, 205);
+}
+.timerSubBar i{
+    font-size: 20px;
+    color: gray;
+}
+.timerSubBar> .timerSub__tabA> i{
+    font-size: 30px;
+}
+
+.timerSub__tabA{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.timerSub__tabA>p{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.timerSub__tabA>p:nth-of-type(1){
+    margin-right: 1300px;
+    
+}
+.timerSub__tabB{
+    display: flex;
+    margin-top: 5px;
+    padding: 10px;
+    visibility: hidden;
+
+}
+.timerSub__tabB>p{
+    margin: 0px 10px 0px 0px;
+    font-size: 16.5px;
+    visibility: visible;
+}
+.timerSub__tabB>img{
+    width: 20px;
+    height: 20px;
+}
+.timerSub__tabB> i{
+    margin: 0px 20px 0px 30px;
+  
+}
+.timerSub__tabB> i:nth-of-type(1){
+    margin-left: 10px;
+}
+.timerSub__tabB> i:nth-of-type(2){
+    margin-left: 1000px;
+}
+.timerSub__tabB:hover{
+    background-color: rgb(233, 227, 227);
+    visibility: visible;
+}
