@@ -85,7 +85,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#" class="nav__container__flexbox">
+                    <a href="../HTML/tag.html" class="nav__container__flexbox">
                         <i class="fas fa-tag"></i> &nbsp
                         <div>Tags</div>
                     </a>
@@ -180,24 +180,24 @@
             </form>
 
             <div class="dropdown">
-                <button  class="timer__create, dropbtn">
-                    <i class='fas fa-plus' style='font-size:15px;color:rgb(129, 15, 103)'></i>
+                <button  class="timer__create, dropbtn" onclick="clientList()">
+                    <i  class='fas fa-plus' style='font-size:15px;color:rgb(129, 15, 103)'></i>
                     Create a Project
                 </button>
-                <div class="dropdown-content">
-                    <button id="dropdown_msgs"  onclick="clientList()"> content </button>
+                <div class="dropdown-content" >
+                    <button id="dropdown_msgs"> </button>
                  </div>
 
             </div>
            
 
             <div class="dropdown">
-                <button class="timer__tag,dropbtn" title="Select tags">
+                <button class="timer__tag,dropbtn" onclick="tagList()" title="Select tags" >
                     <i class='fas fa-tag' style='font-size:15px'></i>
                 </button>
 
                 <div class="dropdown-content">
-                    <button id="dropdown_msgs"> content </button>
+                    <button id="dropdown_msgs1">  </button>
                  </div>
             </div>
 
