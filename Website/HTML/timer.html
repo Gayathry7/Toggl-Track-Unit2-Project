@@ -179,14 +179,28 @@
                 <input type="text" placeholder="What are you working on?" id="timer__input"></input>
             </form>
 
-            <button class="timer__create">
-                <i class='fas fa-plus' style='font-size:15px;color:rgb(129, 15, 103)'></i>
-                Create a Project
-            </button>
+            <div class="dropdown">
+                <button  class="timer__create, dropbtn">
+                    <i class='fas fa-plus' style='font-size:15px;color:rgb(129, 15, 103)'></i>
+                    Create a Project
+                </button>
+                <div class="dropdown-content">
+                    <button id="dropdown_msgs"  onclick="clientList()"> content </button>
+                 </div>
 
-            <button class="timer__tag" title="Select tags">
-                <i class='fas fa-tag' style='font-size:15px'></i>
-            </button>
+            </div>
+           
+
+            <div class="dropdown">
+                <button class="timer__tag,dropbtn" title="Select tags">
+                    <i class='fas fa-tag' style='font-size:15px'></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <button id="dropdown_msgs"> content </button>
+                 </div>
+            </div>
+
 
             <button title="Non-billable">
                 <i class='fas fa-dollar-sign' style='font-size:18px;color:rgb(185, 181, 181)'></i>

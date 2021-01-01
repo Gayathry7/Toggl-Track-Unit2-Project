@@ -1,227 +1,257 @@
-    body {
-        margin: 0px;
-        background-color: rgb(252, 245, 246);
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .timer {
-        margin-left: 180px;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .timer__sub {
-        margin-top: 90px;
-        width: 100%;
-    }
-    
-    .timer__nav__bar {
-        background-color: white;
-        position: fixed;
-        display: flex;
-        width: 88%;
-        height: 60px;
-        z-index: 1;
-        padding: 5px;
-        padding-bottom: 20px;
-        min-width: 50%;
-    }
-    
-    .timer__mainpage__inner {
-        margin-top: 60px;
-    }
-    
-    .timer__stop {
-        display: none;
-        height: 30px;
-        width: 30px;
-        border-radius: 30px;
-        color: white;
-        background-color: rgb(92, 168, 230);
-        border: none;
-    }
-    
-    .timer__start {
-        height: 30px;
-        width: 30px;
-        border-radius: 30px;
-        color: white;
-        background-color: rgb(92, 168, 230);
-        border: none;
-    }
-    
-    nav>p {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 12px;
-    }
-    
-    form,
-    button {
-        background-color: white;
-        border: none;
-        padding: 5px;
-        margin: 10px;
-    }
-    
-    form {
-        width: 60%;
-        /* border: 1px black solid; */
-    }
-    
-    form input {
-        /* border: 1px black solid; */
-        width: 80%;
-        font-size: 20px;
-        font-weight: bold;
-        margin-left: 70px;
-        border: none;
-        padding: 12px 20px;
-    }
-    
-    form input:focus {
-        outline: none;
-    }
-    
-    .timer__display {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .timer__create {
-        width: 10%;
-    }
-    
-    .timer__create:hover {
-        background-color: rgb(240, 240, 240);
-        border-radius: 10px;
-    }
-    
-    .timer__tag i {
-        color: gray
-    }
-    
-    .timer__tag i:hover {
-        color: black;
-    }
-    /* .timer__play {
-        background-color: rgb(230, 137, 209);
-        height: 36px;
-        width: 36px;
-        border-radius: 18px;
-        padding: 10px;
-        margin-left: 40px;
-    } */
-    
-    .timer__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -5px;
-        /* background-color: burlywood; */
-    }
-    
-    .timer__list>button:nth-of-type(1) {
-        width: 100%;
-        /* background-color: pink; */
-        height: 10px;
-    }
-    
-    .timer__list>button:nth-of-type(2) {
-        height: 20px;
-        width: 100%;
-        /* background-color: yellow; */
-    }
-    /* Css for arrows start here ******************************* */
-    
-    .timer__arrows {
-        width: 75%;
-        margin: 5px auto;
-        display: flex;
-        justify-content: space-between;
-        height: 180px;
-        margin: 0 auto;
-    }
-    
-    .timer__leftArrow {
-        width: 350px;
-        height: 150px;
-        display: flex;
-        position: relative;
-    }
-    
-    .timer__leftSub__1 {
-        position: absolute;
-        background-image: url(../IMAGES/left_arrow.png);
-        height: 75px;
-        width: 70px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
-    .timer__leftSub__2 {
-        position: absolute;
-        bottom: 10%;
-        left: 18%;
-    }
-    
-    .timer__rightArrow {
-        width: 350px;
-        height: 150px;
-        display: flex;
-        position: relative;
-    }
-    
-    .timer__rightSub__1 {
-        /* border: 1px black solid; */
-        position: absolute;
-        bottom: 20%;
-        left: 12%;
-    }
-    
-    .timer__rightSub__2 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url(../IMAGES/right_arrow.png);
-        height: 75px;
-        width: 70px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
-    .timer__leftArrow p,
-    .timer__rightArrow p {
-        font-family: 'Kalam', cursive;
-        font-size: 25px;
-        color: #222222;
-    }
-    
-    .timer__middle {
-        text-align: center;
-        position: absolute;
-        top: 300px;
-        left: 50%;
-        /* margin: 300px 450px; */
-        /* left: 20px; */
-    }
-    
-    .timer__middleImage {
-        text-align: center;
-        display: inline-block;
-        margin-left: 15px;
-        margin-bottom: 25px;
-        width: 177px;
-        height: 179px;
-        background: url("https://web-assets.toggl.com/app/assets/images/toggl-stopwatch.e01d4e45.png");
-        background-repeat: no-repeat
-    }
-    
-    .timer__middleText {
-        text-align: center;
-        display: block;
-        margin: 0px auto;
-        width: 300px;
-        font-size: 16px;
-        line-height: 1.4;
-    }
+body {
+    margin: 0px;
+    background-color: rgb(252, 245, 246);
+    display: flex;
+    flex-direction: row;
+}
+
+.timer {
+    margin-left: 180px;
+    height: 100%;
+    width: 100%;
+}
+
+.timer__sub {
+    margin-top: 90px;
+    width: 100%;
+}
+
+.timer__nav__bar {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    width: 88%;
+    height: 60px;
+    z-index: 1;
+    padding: 5px;
+    padding-bottom: 20px;
+    min-width: 50%;
+}
+
+.timer__mainpage__inner {
+    margin-top: 60px;
+}
+
+.timer__stop {
+    display: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(92, 168, 230);
+    border: none;
+}
+
+.timer__start {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(92, 168, 230);
+    border: none;
+}
+
+nav>p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+form,
+button {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+form {
+    width: 60%;
+    /* border: 1px black solid; */
+}
+
+form input {
+    /* border: 1px black solid; */
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
+    border: none;
+    padding: 12px 20px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.timer__display {
+    display: flex;
+    justify-content: center;
+}
+
+.timer__create {
+    width: 10%;
+}
+
+.timer__create:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.timer__tag i {
+    color: gray
+}
+
+.timer__tag i:hover {
+    color: black;
+}
+/* .timer__play {
+    background-color: rgb(230, 137, 209);
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    padding: 10px;
+    margin-left: 40px;
+} */
+
+.timer__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    /* background-color: burlywood; */
+}
+
+.timer__list>button:nth-of-type(1) {
+    width: 100%;
+    /* background-color: pink; */
+    height: 10px;
+}
+
+.timer__list>button:nth-of-type(2) {
+    height: 20px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+/* Css for arrows start here ******************************* */
+
+.timer__arrows {
+    width: 75%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.timer__leftArrow {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.timer__leftSub__1 {
+    position: absolute;
+    background-image: url(../IMAGES/left_arrow.png);
+    height: 75px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.timer__leftSub__2 {
+    position: absolute;
+    bottom: 10%;
+    left: 18%;
+}
+
+.timer__rightArrow {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.timer__rightSub__1 {
+    /* border: 1px black solid; */
+    position: absolute;
+    bottom: 20%;
+    left: 12%;
+}
+
+.timer__rightSub__2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../IMAGES/right_arrow.png);
+    height: 75px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.timer__leftArrow p,
+.timer__rightArrow p {
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: #222222;
+}
+
+.timer__middle {
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    /* margin: 300px 450px; */
+    /* left: 20px; */
+}
+
+.timer__middleImage {
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    width: 177px;
+    height: 179px;
+    background: url("https://web-assets.toggl.com/app/assets/images/toggl-stopwatch.e01d4e45.png");
+    background-repeat: no-repeat
+}
+
+.timer__middleText {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content button:hover {
+    background-color: #e0dddd;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
