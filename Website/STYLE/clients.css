@@ -82,6 +82,10 @@
     .client__imgHead {
         font-weight: 400;
     }
+
+    .client__imgPara{
+        color: rgb(107, 107, 107);
+    }
     /* The Modal (background) */
     
     .client__modal {

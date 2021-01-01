@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clients</title>
+    <title>Tag</title>
 
     <link rel="stylesheet" href="../STYLE/nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../STYLE/clients.css">
+    <link rel="stylesheet" href="../STYLE/tag.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-    <link href="../STYLE/chatbox.css" rel="stylesheet">
 
 </head>
 
@@ -171,102 +169,80 @@
 
     <!-- ******************** Side Navbar ends here ****************  -->
 
-    <div class="client__mainpage">
+    <div class="tag__mainpage">
         <nav class="upper__navbar">
 
-            <p>Clients</p>
+            <p>Tags</p>
 
-            <div class="client__input">
+            <div class="tag__input">
                 <i class='fas fa-search' style='font-size:16px;color:gray'></i>
-                <input type="text" placeholder="Find client..." />
+                <input type="text" placeholder="Find tag..."/>
             </div>
-
+    
             <!-- Trigger/Open The Modal -->
-            <button class="client__new" id="client__newBtn">
+            <button class="tag__new" id="tag__newBtn">
                 <i class='fas fa-plus' style='font-size:15px;color:white'></i>
-                 New Client
+                 New tag
             </button>
+    
 
         </nav>
 
 
 
-        <div class="client__innerpage">
+        <div class="tag__innerpage">
 
 
-            <div class="client__listBackground">
-                <table class="client__list">
-
+            <div class="tag__listBackground">
+                <table class="tag__list" >
+        
                     <tr>
                         <td>All</td>
                     </tr>
-
-                    <tr id="client__list">
-
+            
+                    <tr id="tag__list">
+            
                     </tr>
                 </table>
             </div>
 
 
 
-            <!-- The Modal -->
-            <div id="client__myModal" class="client__modal">
+          <!-- The Modal -->
+            <div id="tag__myModal" class="tag__modal">
 
-                <!-- Modal content -->
-                <div class="client__modal-content">
-                    <span class="client__close">&times;</span>
-                    <p>New Client</p>
+            <!-- Modal content -->
+            <div class="tag__modal-content">
+            <span class="tag__close">&times;</span>
+            <p>New tag</p>
+        
+            <form  id="tag__Inputform">
+                <input id="tag__Newinput" type="text" placeholder="tag Name..." />
+                <p id="tag__alert"></p>
+            </form>
 
-                    <form id="client__Inputform">
-                        <input id="client__Newinput" type="text" placeholder="Client Name..." />
-                        <p id="client__alert"></p>
-                    </form>
-
-                    <button onclick="myFunction()">Create</button>
-                </div>
-
+                <button onclick="myFunction()">Create</button>
+            </div>
+            
             </div>
 
+            <div id="snackbar"><span id="snackbarSpan">Successful!</span> <br/>Tag created Successfully</div>
 
-            <div id="snackbar"><span id="snackbarSpan">Success!</span> <br/> Client created Successfully</div>
-
-
-
-
-            <div class="client__imgBox" id="client__imgBox">
-                <div class="client__imgContent">
-                    <img src="https://web-assets.toggl.com/app/assets/images/boxes.8839c2e0.png" alt="Empty boxes" class="client__imgContent">
-                    <h2 class="client__imgHead"><span>Just some empty boxes here</span></h2>
-                    <div class="client__imgPara"><span>Clients help you organize and filter your projects.</span></div>
-                    <div class="client__imgPara"><span>Switch to a different workspace or click New client to get started.</span></div>
+          
+            <div class="tag__imgBox" id="tag__imgBox">
+                <div class="tag__imgContent">
+                    <img src="https://web-assets.toggl.com/app/assets/images/boxes.8839c2e0.png" alt="Empty boxes" class="tag__imgContent">
+                    <h2 class="tag__imgHead"><span>Just some empty boxes here</span></h2>
+                    <div class="tag__imgPara"><span>Tags help you organize and filter your time entries.</span></div>
+                    <div  class="tag__imgPara"><span>Switch to a different workspace or click New tag to get started.</span></div>
                 </div>
             </div>
+
         </div>
     </div>
-
-    <button class = "scrollUp__btn">
-        Back to top
-    </button>
-    <div class = "chatbox__unreveal">
-        <div class = "chatbox__header">
-            <img src = "https://raw.githubusercontent.com/toggl-open-source/toggldesktop/gh-pages/assets/toggl-track-wide.png" class = "chatbox__logo">
-            <h1>Hi User  👋</h1>
-            <!-- <p>Ask us anything or share your feedback.</p>
-            <p>Our replies will also be sent to your email.</p> -->
-        </div>
-        <div class = "chatbox__one"></div>
-        <div class = "chatbox__two"></div>
-        <div class = "chatbox__three"></div>
-        <div class = "chatbox__four"> </div>
-    </div>
-    <div class = "chatbox__btn">
-        <img src = "../IMAGES/chat_icon.svg" class = "chatbox__icon">
-    </div>
-
-
-    <script src="../SCRIPT/clients.js"></script>
+    <script src="../SCRIPT/tag.js"></script>
     <script src="../SCRIPT/nav.js"></script>
-    <script src = "../SCRIPT/chatbox.js"></script>
+
 
 </body>
 
