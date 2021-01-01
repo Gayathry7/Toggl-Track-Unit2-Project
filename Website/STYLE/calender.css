@@ -1,0 +1,161 @@
+body{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.weekly__container__outer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    height: 100%;
+
+}
+
+.weekly__container {
+   
+    width: 100%;
+    background-color: #FEF9F8;
+    position: absolute;
+    left: 1;
+    top: 100px;
+   
+  
+}
+
+
+
+/* *** CSS for the upper nav baar  */
+.timer__nav__bar {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    
+    width: 86%;
+    height: 80px;
+    z-index: 1;
+    padding: 5px;
+    padding-bottom: 20px;
+    min-width: 50%;
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 5px 5px 10px #E7E3E2;
+}
+
+
+
+.timer__stop {
+    display: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(92, 168, 230);
+    border: none;
+    padding: 1px;
+}
+
+.timer__start {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding: 1px;
+    color: white;
+    background-color: rgb(92, 168, 230);
+    border: none;
+    display: block;
+}
+
+.timer__nav__bar button:focus {
+    outline: none;
+}
+
+nav>p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+form,
+button {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+form {
+    width: 50%;
+    height: auto;
+}
+
+form input {
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
+    border: none;
+    padding: 10px 20px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.timer__display {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 15px;
+    width: 15%;
+}
+
+.timer__stopwatch{
+    display: flex;
+    justify-content: center;
+}
+.timer__stopwatch span {
+    margin: auto auto;
+}
+
+#checking{
+    border: 1px black solid;
+    width: 15px;
+}
+ 
+.timer__create,
+.timer__bill,
+.timer__tag i {
+    color: gray;
+    margin: auto 15px;
+    /* border: 1px black solid; */
+}
+.timer__create i:hover{
+    color: black;
+
+}
+
+.timer__tag i:hover {
+    color: black;
+}
+
+
+.timer__list {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+   
+    margin: auto 15px;
+    /* border: 1px black solid; */
+    /* background-color: burlywood; */
+}
+
+.timer__list>button:nth-of-type(1) {
+    width: 100%;
+    /* background-color: pink; */
+    height: 49%;
+}
+
+.timer__list>button:nth-of-type(2) {
+    height: 49%;
+    width: 100%;
+    /* background-color: yellow; */
+}
