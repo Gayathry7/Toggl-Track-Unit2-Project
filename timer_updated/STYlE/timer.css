@@ -1,0 +1,317 @@
+body {
+    margin: 0px;
+    background-color: rgb(252, 245, 246);
+    display: flex;
+    flex-direction: row;
+}
+
+.timer {
+    margin-left: 180px;
+    height: 100%;
+    width: 100%;
+}
+
+.timer__sub {
+    margin-top: 90px;
+    width: 100%;
+}
+
+.timer__nav__bar {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    width: 88%;
+    height: 90px;
+    z-index: 1;
+    padding: 5px;
+    padding-bottom: 20px;
+    min-width: 50%;
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 5px 5px 10px #E7E3E2;
+}
+
+.timer__mainpage__inner {
+    margin-top: 60px;
+}
+
+.timer__stop {
+    display: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(92, 168, 230);
+    border: none;
+}
+
+.timer__start {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(92, 168, 230);
+    border: none;
+    display: block;
+}
+
+.timer__nav__bar button:focus {
+    outline: none;
+}
+
+nav>p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+form,
+button {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+form {
+    width: 50%;
+    height: auto;
+}
+
+form input {
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
+    border: none;
+    padding: 10px 20px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.timer__display {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 15px;
+    width: 15%;
+}
+
+.timer__create {
+    width: 15%;
+    margin: auto 15px;
+    /* border: 1px black solid; */
+}
+
+.timer__create:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.timer__bill,
+.timer__tag i {
+    color: gray;
+    margin: auto 15px;
+    /* border: 1px black solid; */
+}
+
+.timer__tag i:hover {
+    color: black;
+}
+/* .timer__play {
+    background-color: rgb(230, 137, 209);
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    padding: 10px;
+    margin-left: 40px;
+} */
+
+.timer__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: -5px;
+    margin: auto 15px;
+    /* border: 1px black solid; */
+    /* background-color: burlywood; */
+}
+
+.timer__list>button:nth-of-type(1) {
+    width: 100%;
+    /* background-color: pink; */
+    height: 49%;
+}
+
+.timer__list>button:nth-of-type(2) {
+    height: 49%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+/* Css for arrows start here ******************************* */
+
+.timer__arrows {
+    width: 75%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.timer__leftArrow {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.timer__leftSub__1 {
+    position: absolute;
+    background-image: url(../IMAGES/left_arrow.png);
+    height: 75px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.timer__leftSub__2 {
+    position: absolute;
+    bottom: 10%;
+    left: 18%;
+}
+
+.timer__rightArrow {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.timer__rightSub__1 {
+    border: 1px black solid;
+    position: absolute;
+    bottom: 20%;
+    left: 12%;
+}
+
+.timer__rightSub__2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../IMAGES/right_arrow.png);
+    height: 75px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.timer__leftArrow p,
+.timer__rightArrow p {
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: #222222;
+}
+
+.timer__middle {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    /* margin: 300px 450px; */
+    /* left: 20px; */
+}
+
+.timer__middleImage {
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    width: 177px;
+    height: 179px;
+    background: url("https://web-assets.toggl.com/app/assets/images/toggl-stopwatch.e01d4e45.png");
+    background-repeat: no-repeat
+}
+
+.timer__middleText {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* subbar css starts here ********************************************** */
+.timer__card__style{
+    display: coloumn;
+   width: 80%;
+   height: auto;
+   margin-top: 20%;
+   margin-left: 200px;
+   border: solid 1px black;
+
+}
+
+.timerSubBar{
+    height: 150px;
+    width: auto;
+    background-color: white;
+    box-shadow: 2px 1px 3px 1px rgb(207, 205, 205);
+    margin-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+   border: solid 1px black;
+   margin-bottom: 20px;
+    
+}
+.timerSubBar >div {
+margin: auto auto;
+}
+
+.timerSubBar i{
+    font-size: 20px;
+    color: gray;
+}
+
+
+
+/* 
+.timerSub__tabA>p{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.timerSub__tabB{
+    display: flex;
+    margin-top: 5px;
+    padding: 10px;
+    visibility: hidden;
+
+}
+.timerSub__tabB>p{
+    margin: 0px 10px 0px 0px;
+    font-size: 16.5px;
+    visibility: visible;
+}
+.timerSub__tabB>img{
+    width: 20px;
+    height: 20px;
+}
+.timerSub__tabB> i{
+    margin: 0px 20px 0px 30px;
+  
+}
+.timerSub__tabB> i:nth-of-type(1){
+    margin-left: 10px;
+}
+.timerSub__tabB> i:nth-of-type(2){
+    margin-left: 1000px;
+}
+.timerSub__tabB:hover{
+    background-color: rgb(233, 227, 227);
+    visibility: visible;
+} */
