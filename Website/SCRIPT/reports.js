@@ -83,13 +83,22 @@ var barChart = new Chart(myChart, {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         datasets: [{
             backgroundColor: "#6ACCF9",
-            data: [3, 6, 5, 2, 9, 8, 10]
+            data: [3, 6, 5, 2, 9, 8, 12],
+            
         }]
     },
 
     options: {
         legend: {
             display : false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    suggestedMin: 0,
+                    stepSize: 2
+                }
+            }]
         }
     }
 });
