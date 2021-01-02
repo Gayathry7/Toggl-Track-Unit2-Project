@@ -240,8 +240,7 @@ form input:focus {
 }
 .timer__week button{
     border: none;
-    padding: 10px;
-    background-color:  rgb(187, 194, 202);
+    background-color: #80aaff;
     border-radius: 5px;
 }
 

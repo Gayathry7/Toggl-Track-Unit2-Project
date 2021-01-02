@@ -14,13 +14,9 @@ body{
 
 .weekly__container {
    
-    width: 100%;
+    width: 87%;
     background-color: #FEF9F8;
     position: absolute;
-    left: 1;
-    top: 100px;
-   
-  
 }
 
 
@@ -32,7 +28,7 @@ body{
     display: flex;
     
     width: 86%;
-    height: 80px;
+    height: 0px;
     z-index: 1;
     padding: 5px;
     padding-bottom: 20px;
