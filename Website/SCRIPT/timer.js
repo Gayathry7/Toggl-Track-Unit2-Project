@@ -263,5 +263,56 @@ function loadData(){
 }
 
 
+function clientList(){
 
+    var lsGet = localStorage.getItem("projectList");
+    console.log(lsGet)
+
+    if(lsGet === null){
+        data = [];
+    }else{
+        data= JSON.parse(lsGet);
+    }
+
+    
+
+    let html = "";
+    var list = document.getElementById("dropdown_msgs")
+
+    data.forEach(function(item){
+        
+        html += `
+                  <button> 
+                  ${item.projectName} 
+                  </button> `;
+    });
+    list.innerHTML = html;    
+
+  }
+
+
+  function tagList(){
+
+    var lsGetTag = localStorage.getItem("tag");
+    console.log(lsGetTag)
+
+    if(lsGetTag === null){
+        data = [];
+    }else{
+        data= JSON.parse(lsGetTag);
+    }
+
+
+    let html = "";
+    var list = document.getElementById("dropdown_msgs1")
+
+    data.forEach(function(item){
+        
+        html += `
+                  <button>
+                  ${item.tag_name} 
+                  </button> `;
+    });
+    list.innerHTML = html;
+   }
  

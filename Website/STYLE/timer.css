@@ -22,7 +22,7 @@ body {
     width: 86%;
     height: 80px;
     z-index: 1;
-    padding: 5px;
+    /* padding: 5px; */
     padding-bottom: 20px;
     min-width: 50%;
     border-bottom: 1px solid #E8E8E8;
@@ -110,10 +110,11 @@ form input:focus {
 }
  
 .timer__create,
-.timer__bill,
-.timer__tag i {
+.timer__tag {
     color: gray;
-    margin: auto 15px;
+    margin: 10px 15px !important;
+    /* line-height: 50px; */
+
     /* border: 1px black solid; */
 }
 .timer__create i:hover{
@@ -123,6 +124,11 @@ form input:focus {
 
 .timer__tag i:hover {
     color: black;
+}
+.timer__bill i {
+    color: gray;
+    margin: auto 15px;
+    /* border: 1px black solid; */
 }
 /* .timer__play {
     background-color: rgb(230, 137, 209);
@@ -305,3 +311,43 @@ margin: auto auto;
     color: gray;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    /* padding: 10px 12px; */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content button:hover {
+    background-color: #e0dddd;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#dropdown_msgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+#dropdown_msgs >button{
+    padding: 0;
+    font-size: 16px;
+}

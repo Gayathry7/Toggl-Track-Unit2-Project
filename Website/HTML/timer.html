@@ -181,14 +181,37 @@
                 <input type="text" placeholder="What are you working on?" id="timer__input"></input>
             </form>
 
-            <button class="timer__create" title="Select project">
+            <!-- <button class="timer__create" title="Select project">
                  <i class="fas fa-folder-minus" ></i>
                
             </button>
 
             <button class="timer__tag" title="Select tags">
                 <i class='fas fa-tag' style='font-size:15px'></i>
-            </button>
+            </button> -->
+
+
+            <div class="dropdown">
+                <button  class="timer__create, dropbtn"  title="Select project" onclick="clientList()">
+                    <i  class='fas fa-folder-minus' ></i>
+                   
+                </button>
+                <div class="dropdown-content" >
+                    <button id="dropdown_msgs"> </button>
+                 </div>
+
+            </div>
+           
+
+            <div class="dropdown">
+                <button class="timer__tag,dropbtn" onclick="tagList()" title="Select tags" >
+                    <i class='fas fa-tag' style='font-size:15px'></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <button id="dropdown_msgs1">  </button>
+                 </div>
+            </div>
 
             <button title="Non-billable">
                 <i class='fas fa-dollar-sign' style='font-size:18px;color:rgb(185, 181, 181)'></i>
