@@ -96,12 +96,12 @@
     color: white;
 }
 
-.nav__container__workspace {
+/* .nav__container__workspace {
     height: 150px;
     width: 150px;
     position: sticky;
     bottom: 0px;
-}
+} */
 
 .nav__container__flexbox {
     display: flex;

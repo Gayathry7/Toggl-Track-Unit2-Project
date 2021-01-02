@@ -1,13 +1,15 @@
 body{
     margin:0px;
+    overflow-y: scroll;
 }
 .login__background{
     line-height: 1.15;
     font-size: 16px;
-    background-color: #4f2f5e;
+    background: linear-gradient(rgb(85, 10, 226),#412A4C); 
     display: flex;
-    min-height: 100vh;
+    min-height: 112vh;
     position: relative;
+    height: auto;
 }
 
 
@@ -47,10 +49,12 @@ body{
     width: 670px;
     height: 500px;
     position:sticky;
-    top: 310px;
-    left: 430px;
+    top: 350px;
+    left: 360px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .login__data>div:nth-of-type(1){
@@ -95,19 +99,20 @@ body{
 .login__input>input{
     background-color:rgb(245, 225, 208) ;
     padding:10px;
-    width: 100%;
+    width: 95%;
+    margin: 0px auto;
     border: 0.5px solid black;
     border-radius: 2px;
     font-size: 15px;
 }
 
 .login__btn{
-    background-color: rgb(243, 137, 217);
-    width: 100%;
+    background: linear-gradient(rgb(243, 137, 217), rgb(207, 107, 199)); 
+    width: 89%;
     color: white;
     text-align: center;
     height: 40px;
-    margin: 0px 20px;
+    margin: 0px auto;
     border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
