@@ -1,4 +1,8 @@
-draw()
+var data = localStorage.getItem("calendar")
+console.log(data)
+data = JSON.parse(data)
+
+draw(data)
 
 var date = new Date
 function draw(data){
