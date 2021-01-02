@@ -134,7 +134,7 @@ function clientList(){
 
     
 
-    let html = "";
+    let html = "Projects";
     var list = document.getElementById("dropdown_msgs")
 
     data.forEach(function(item){
@@ -161,7 +161,7 @@ function clientList(){
     }
 
 
-    let html = "";
+    let html = "Available Tags";
     var list = document.getElementById("dropdown_msgs1")
 
     data.forEach(function(item){
