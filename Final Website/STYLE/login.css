@@ -46,11 +46,11 @@ body{
 
 .login__data{
     background-color: #310844;
-    width: 670px;
+    width: 680px;
     height: 500px;
     position:sticky;
     top: 350px;
-    left: 360px;
+    left: 423px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
