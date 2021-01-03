@@ -33,7 +33,7 @@ function myFunction() {
     var invalue = document.getElementById("client__Newinput");
     var value = invalue.value;
     var inAlert = document.getElementById("client__alert")
-    var imgBox = document.getElementById("client__imgBox")
+    var imgBox = document.querySelector(".client__content__container")
 
     var lsGet = localStorage.getItem("client");
     var data =[];
@@ -76,7 +76,7 @@ function myFunction() {
   function display(){
 
     var lsGet = localStorage.getItem("client");
-    var imgBox = document.getElementById("client__imgBox")
+    var imgBox = document.querySelector(".client__content__container")
     imgBox.innerHTML= "";
     modal.style.display = "none";
 

@@ -171,19 +171,20 @@
     <!-- ******************** Side Navbar ends here ****************  -->
 
     <div class="tag__mainpage">
-        <nav class="upper__navbar">
+        <nav class="tag__upper__navbar">
 
-            <p>Tags</p>
+            <p class = "upper__navbar__title">Tags</p>
 
             <div class="tag__input">
-                <i class='fas fa-search' style='font-size:16px;color:gray'></i>
+                <i class='fas fa-search' style='font-size:14px;color:gray'></i>
                 <input type="text" placeholder="Find tag..."/>
             </div>
+            <div class = tag__flexGrow></div>
     
             <!-- Trigger/Open The Modal -->
             <button class="tag__new" id="tag__newBtn">
                 <i class='fas fa-plus' style='font-size:15px;color:white'></i>
-                 New tag
+                <strong>New tag</strong> 
             </button>
     
 
@@ -198,7 +199,7 @@
                 <table class="tag__list" >
         
                     <tr>
-                        <td>All</td>
+                        <td class = "tag__list__title"><strong>All</strong></td>
                     </tr>
             
                     <tr id="tag__list">
@@ -218,7 +219,7 @@
             <p>New tag</p>
         
             <form  id="tag__Inputform">
-                <input id="tag__Newinput" type="text" placeholder="tag Name..." />
+                <input id="tag__Newinput" type="text" placeholder="Tag Name..." />
                 <p id="tag__alert"></p>
             </form>
 
@@ -230,12 +231,12 @@
             <div id="snackbar"><span id="snackbarSpan">Successful!</span> <br/>Tag created Successfully</div>
 
           
-            <div class="tag__imgBox" id="tag__imgBox">
-                <div class="tag__imgContent">
-                    <img src="https://web-assets.toggl.com/app/assets/images/boxes.8839c2e0.png" alt="Empty boxes" class="tag__imgContent">
-                    <h2 class="tag__imgHead"><span>Just some empty boxes here</span></h2>
-                    <div class="tag__imgPara"><span>Tags help you organize and filter your time entries.</span></div>
-                    <div  class="tag__imgPara"><span>Switch to a different workspace or click New tag to get started.</span></div>
+            <div class="tag__content__container">
+                <div class="tag__content">
+                    <img src="https://web-assets.toggl.com/app/assets/images/boxes.8839c2e0.png" alt="empty boxes">
+                    <p class="tag__content__font24">Just some empty boxes here</p>
+                    <div class="tag__content__grey">Try a different data range or filters.</div>
+                    <div class="tag__content__grey">Still nothing? Go ahead and track some time.</div>
                 </div>
             </div>
 

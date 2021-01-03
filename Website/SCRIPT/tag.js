@@ -33,7 +33,7 @@ function myFunction() {
     var invalue = document.getElementById("tag__Newinput");
     var value = invalue.value;
     var inAlert = document.getElementById("tag__alert")
-    var imgBox = document.getElementById("tag__imgBox")
+    var imgBox = document.querySelector(".tag__content__container")
 
     var lsGet = localStorage.getItem("tag");
     var data =[];
@@ -76,7 +76,7 @@ function myFunction() {
   function display(){
 
     var lsGet = localStorage.getItem("tag");
-    var imgBox = document.getElementById("tag__imgBox")
+    var imgBox = document.querySelector(".tag__content__container")
     imgBox.innerHTML= "";
     modal.style.display = "none";
 
@@ -100,8 +100,9 @@ function myFunction() {
          <td>
              <div class="dropdown">
 
-                <button class="dropbtn" id="tag__moreBtn" >${item.tag_name}
-                <img src= "${src}"></img> 
+                <button class="dropbtn" id="tag__moreBtn" >
+                  ${item.tag_name}
+                  <img src= "${src}"></img> 
                 </button>
 
                 <div class="dropdown-content">

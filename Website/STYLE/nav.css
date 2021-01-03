@@ -161,7 +161,7 @@
         position: sticky;
         bottom: 0px;
     }
-    nav {
+    /* nav {
         background-color: white;
         position: fixed;
         display: flex;
@@ -171,7 +171,7 @@
         padding: 5px;
         padding-bottom: 20px;
         min-width: 50%;
-    }
+    } */
     .timer__middle,
     .timer__arrows {
         display: none;
