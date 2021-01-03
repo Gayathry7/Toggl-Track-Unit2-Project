@@ -128,7 +128,7 @@ function showProjects()
             <div class = "projectList__name">${e.projectName}</div>
             <div class = "projectList__client">${e.client}</div>
             <div class = "projectList__status">0 h</div>
-            <div class = "projectList__team">${e.team}</div>
+            <div class = "projectList__team"><strong>${e.team}</strong></div>
             <button class = "projectList__delete" onclick = popupListItem__delete(${i})>DELETE</button> 
         </div>
         `
