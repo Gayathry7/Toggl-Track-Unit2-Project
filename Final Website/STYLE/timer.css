@@ -1,15 +1,12 @@
 body {
-    margin: 0px;
-    background-color: rgb(252, 245, 246);
-    display: flex;
-    flex-direction: row;
+    margin:0px;
+    min-width: 850px;
+    background-color: #FEF9F8;
+    font-family: 'Roboto', sans-serif;
 }
 
 .timer {
     margin-left: 180px;
-    height: 100%;
-    width: 80%;
-   
 }
 
 
@@ -18,113 +15,83 @@ body {
     background-color: white;
     position: fixed;
     display: flex;
-    
-    width: 90%;
-    height: 80px;
+    top:0;
+    width: 88vw;
+    height: 65px;
     z-index: 1;
-    /* padding: 5px; */
-    padding-bottom: 20px;
-    min-width: 50%;
     border-bottom: 1px solid #E8E8E8;
-    box-shadow: 5px 5px 10px #E7E3E2;
+    box-shadow: 5px 3px 5px #E7E3E2;
+    min-width: 850px;
+}
+
+.timer__nav__flexGrow{
+    flex-grow: 1;
 }
 
 
 
 .timer__stop {
     display: none;
-    height: 30px;
-    width: 30px;
-    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     color: white;
-    background-color: rgb(92, 168, 230);
+    background-color: #E57CD8 !important;
     border: none;
-    padding: 1px;
+    margin-top:10px;
 }
 
 .timer__start {
-    height: 30px;
-    width: 30px;
-    border-radius: 30px;
-    padding: 3px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     color: white;
-    background-color: rgb(92, 168, 230);
+    background-color: #E57CD8 !important;
     border: none;
     display: block;
+    margin-top:10px;
 }
 
-.timer__nav__bar button:focus {
+.timer__nav__bar button{
     outline: none;
+    border:none;
+    background-color: white;
 }
 
-nav>p {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 12px;
-}
-
-form,
-button {
+.timer__nav__bar__form
+{
     background-color: white;
     border: none;
-    padding: 5px;
-    margin: 10px;
 }
 
-form {
-    width: 50%;
-    height: auto;
-}
-
-form input {
-    width: 80%;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 70px;
+.timer__nav__bar__form input {
+    font-size: 18px;
+    margin-left: 20px;
     border: none;
-    padding: 10px 20px;
+    line-height: 60px;
 }
 
-form input:focus {
+.timer__nav__bar__form input:focus {
     outline: none;
 }
 
 .timer__display {
     display: flex;
     justify-content: space-evenly;
-    margin: auto 15px;
-    width: 15%;
-}
-
-.timer__stopwatch{
-    display: flex;
-    justify-content: center;
-}
-.timer__stopwatch span {
-    margin: auto auto;
-}
-
-#checking{
-    border: 1px black solid;
-    width: 15px;
+    line-height: 60px;
 }
  
 .timer__create,
 .timer__tag {
     color: gray;
-    margin: 10px 15px !important;
-    /* line-height: 50px; */
-
-    /* border: 1px black solid; */
 }
-.timer__create i:hover{
+/* .timer__create i:hover{
     color: black;
-
 }
 
 .timer__tag i:hover {
     color: black;
-}
+} */
 .timer__bill i {
     color: gray;
     margin: auto 15px;
@@ -142,24 +109,25 @@ form input:focus {
 .timer__list {
     display: flex;
     flex-direction: column;
-    height: 90%;
-   
-    margin: auto 15px;
-    /* border: 1px black solid; */
-    /* background-color: burlywood; */
+    margin-right: 30px;
 }
 
 .timer__list>button:nth-of-type(1) {
-    width: 100%;
-    /* background-color: pink; */
     height: 49%;
 }
 
 .timer__list>button:nth-of-type(2) {
     height: 49%;
-    width: 100%;
-    /* background-color: yellow; */
 }
+.timer__display > div{
+    margin-right: 20px;
+}
+.dropdown > button, .dropdown ~ button{
+    margin-right: 15px;
+}
+
+
+
 /* Css for arrows start here ******************************* */
 .timer__sub {
     margin-top: 120px;
@@ -232,20 +200,20 @@ form input:focus {
 /* arrow fineshes here*********** below is button for week view*/
 
 .timer__week{
-    position: absoute;
-    margin-left: 90%;
-    margin-top: 0;
     display: none;   
-    
 }
 .timer__week button{
     border: none;
-    background-color: #80aaff;
+    background-color: white;
+    border:1px solid #E8E8E8;
+    box-shadow: 2px 2px 5px #E7E3E2;
     border-radius: 5px;
-}
-
-.timer__week button:focus {
+    width:130px;
     outline: none;
+    height:40px;
+    float: right;
+    margin-right:20px;
+    margin-bottom:20px ;
 }
 
 
@@ -282,28 +250,23 @@ form input:focus {
 
 /* subbar css starts here ********************************************** */
 .timer__card__style{
-    display: coloumn;
-   width: 85%;
-   height: auto;
-   margin-top: 2%;
-   margin-left: 130px;
-  
-
+    width: 100%;
+    clear: both;    
 }
 
 .timerSubBar{
-    height: 150px;
+    height: 50px;
     width: auto;
     background-color: white;
-    box-shadow: 2px 1px 3px 1px rgb(207, 205, 205);
+    box-shadow: 0 3px 3px #EFE9EB;
     margin-left: 0;
     display: flex;
-    justify-content: space-evenly; 
-   margin-bottom: 15px;
-    
+    justify-content: space-evenly;
+    border-bottom: 1px solid #E8E8E8;
+    color: #422A4C;
 }
 .timerSubBar >div {
-margin: auto auto;
+    margin: auto auto;
 }
 
 .timerSubBar i{
@@ -350,12 +313,6 @@ margin: auto auto;
 #dropdown_msgs >button{
     padding: 0;
     font-size: 16px;
-}
-@media only screen and (max-width: 900px) {
-    .timer__nav__bar {
-        width: 95%;
-    }
-
 }
 
 #dropdown_msgs, #dropdown_msgs1{

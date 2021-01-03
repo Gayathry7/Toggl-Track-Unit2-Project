@@ -1,6 +1,7 @@
 body{
     margin:0px;
     min-width: 850px;
+    background-color: #FEF9F8;
 }
 .reports__container{
     margin-left: 180px;
@@ -9,6 +10,7 @@ body{
     font-size :14px;
     color: #7B7B7B;
     box-shadow: 5px 5px 10px #E7E2E1;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 .reports__nav__top{

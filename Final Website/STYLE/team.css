@@ -1,31 +1,36 @@
-body {
-    margin: 0;
-    background-color: rgb(252, 245, 246);
+body{
+    margin:0px;
+    min-width: 850px;
+    background-color: #FEF9F8;
 }
-
 .team__mainpage {
-    margin-left: 150px;
-    height: 100%;
-    width: 90%;
+    margin-left: 180px;
 }
 
-nav {
+.team__topNav {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0px 0px 0px 30px;
     background-color: white;
+}
+.team__topNav__flexGrow{
+    flex-grow: 1;
 }
 
 .team__navA {
     display: flex;
     width: 100%;
-    height: 40px;
-    margin: 0px 0px 10px 0px;
-    padding: 20px;
+    height: 66px;
+    padding-left: 30px;
+    line-height: 35px;
+    background-color: white;
+    border-bottom: 1px solid #E8E8E8;
 }
 
+
+.team__navA__title{
+    margin-right:25px !important;
+}
 .team__navA>p {
-    flex-basis: 70px;
+    margin-right:18px;
 }
 
 .team__navA>p:hover {
@@ -42,38 +47,33 @@ nav {
 }
 
 .team__navA>button {
-    background-color: rgb(215, 91, 219);
+    background-color: #DD6FD1;
     border: none;
-    border-radius: 10px;
+    outline: none;
+    border-radius: 8px;
     color: white;
     font-weight: bold;
     font-size: 13px;
-    margin-left: 60%;
-    padding-bottom: 5px;
+    height:35px;
+    width:140px;
+    margin:15px 50px 0 0;
 }
 
 .team__navA>button:hover {
-    background-color: rgb(104, 20, 107);
+    background-color: #b55bab;
 }
 
 .team__navA>button>i {
-    height: 25px;
-    width: 20px;
-    font-size: 18px;
-    background-color: transparent;
-    border-radius: 5px;
-    margin-top: 14px;
-    color: white;
-    padding: 0px 2px;
+    margin-right: 5px;
 }
 
 .team__navB {
     display: flex;
-    box-shadow: 0px 2px 10px 0px gray;
+    box-shadow: 5px 5px 10px #E7E3E2;
+    background-color: white;
     width: 100%;
-    height: 40px;
-    margin: 0px 0px 10px 0px;
-    padding: 10px;
+    height: 45px;
+    padding: 5px 0 0 20px;
 }
 
 .team__navB>button {
@@ -81,11 +81,13 @@ nav {
     flex-basis: 80px;
     border: none;
     background-color: white;
-    flex-basis: 100px;
+    outline: none;
+    height: 85%;
+    padding:0 10px;
 }
 
 .team__navB>button:hover {
-    background-color: rgb(230, 227, 227);
+    background-color: #ebe7eb;
     border-radius: 10px;
 }
 
@@ -126,9 +128,11 @@ nav {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 10px;
+    padding-bottom:8px ;
 }
 
 .dropdown-content a {
@@ -136,6 +140,7 @@ nav {
     padding: 10px 12px;
     text-decoration: none;
     display: block;
+    margin:0 10px;
 }
 
 .dropdown-content a:hover {
@@ -148,38 +153,28 @@ nav {
 }
 
 .team__sectionA {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0px 0px 30px;
+    margin-top: 20px;
     background-color: white;
 }
 
 .team__sectionAa {
     display: flex;
-    height: 10px;
-    margin: 0px 10px 30px 20px;
+    height: 50px;
+    margin-left: 20px;
     width: 100%;
-}
-
-.team__sectionAa>p,
-.team__sectionAb>p {
-    flex-basis: 300px;
     font-size: 11px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: gray;
+    line-height:30px;
+    color:#95899B;
 }
-
-.team__sectionAa>p:nth-of-type(2),
-.team__sectionAb>p:nth-of-type(1) {
-    flex-basis: 400px;
+.team__sectionA__divider{
+    border-bottom: 1px solid #E8E8E8;
 }
 
 .team__sectionAb {
     display: flex;
     width: 100%;
-    margin: 0px 10px 0px 20px;
-    border-top: 1px solid rgb(204, 202, 202);
+    margin-left:20px;
+    height:50px;
 }
 
 .team__sectionAb:hover {
@@ -202,8 +197,24 @@ nav {
 
 .team__sectionAb__name {
     display: flex;
-    flex-basis: 300px;
 }
+.team__name{
+    width:25%;
+    overflow:hidden;
+}
+.team__email{
+    width:25%;
+    overflow:hidden;
+}
+.team__access{
+    width: 20%;
+    overflow:hidden;
+}
+.team__group{
+    width:15%;
+    overflow:hidden;
+}
+
 
 .team__sectionAb__name p:nth-of-type(1) {
     background-color: rgb(39, 45, 48);
@@ -225,10 +236,4 @@ nav {
 
 .team__spider__content span {
     font-size: 25px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .team__mainpage {
-        margin-left: 25px;
-    }
 }

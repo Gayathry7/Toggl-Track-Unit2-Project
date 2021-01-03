@@ -171,14 +171,13 @@
     <!-- Side-bar navigation ends here -->
 
     <div class="team__mainpage">
-        <nav>
-
+        <nav class = "team_topNav">
             <div class="team__navA">
-                <p> Team</p>
+                <p class = "team__navA__title"> Team</p>
                 <p> Members </p>
                 <p> Groups</p>
                 <p> Activity</p>
-
+                <div class = "team__topNav__flexGrow"></div>
                 <button>
                     <i class='far fa-paper-plane'></i>
                     Invite members
@@ -221,24 +220,26 @@
             <div class="team__sectionA">
                 <div class="team__sectionAa">
 
-                    <p>NAME</p>
-                    <p>EMAIL</p>
-                    <p>ACCESS</p>
-                    <p>GROUPS</p>
+                    <p class = "team__name">NAME</p>
+                    <p class = "team__email">EMAIL</p>
+                    <p class = "team__access">ACCESS</p>
+                    <p class = "team__group">GROUPS</p>
 
                 </div>
+                <div class = "team__sectionA__divider"></div>
 
                 <div class="team__sectionAb">
-                    <div class="team__sectionAb__name">
+                    <div class="team__sectionAb__name team__name">
                         <p>
                             <span class="material-icons" style = "width:100%">
                                 account_circle
                             </span>
                         </p>
-                        <p class = "team__sectionAb__name__user">Gayathry_j</p>
+                        <p class = "team__sectionAb__name__user"></p>
                     </div>
-                    <p class = "team__sectionAb__name__email">gayathry_j@yahoo.in</p>
-                    <p>Admin <br> <span>Owner</span></p>
+                    <p class = "team__sectionAb__name__email team__email"></p>
+                    <p class = "team__access">Admin Owner</p>
+                    <p class = "team__sectionAb__name__group team__group"></p>
 
                 </div>
             </div>
