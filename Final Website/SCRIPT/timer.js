@@ -27,7 +27,12 @@ start.addEventListener("click",function(){
     middle_photo.style.display = "none"
     timer__arrow.style.display = "none"
     weekview.style.display = "block"
-
+    var sendDate = new Date()
+    var project1  = document.querySelector('#dropdown_msgs').textContent.trim();
+    
+    var obj=[{title: project1, start: sendDate}]
+    obj = JSON.stringify(obj)
+    localStorage.setItem("calendar", obj)
 
 })
 
