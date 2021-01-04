@@ -9,25 +9,32 @@ The project statement given to us was to create a  dynamic clone of Toggle Track
 
 ------------------- **TEAM MEMBERS** --------------------
 
-1.) Gayathry [Github link](https://github.com/Gayathry7)
+1.) Gayathry [Github profile](https://github.com/Gayathry7)
 
-2.) Saravana [Github link](https://github.com/SaravanakumarJN)
+2.) Saravana [Github profile](https://github.com/SaravanakumarJN)
 
 3.) Rakesh [GitHub profile](https://github.com/Rakesh-Thampy/)
 
 
 ----------------- **Comaprison of Original and cloned page** --------------
 
+
 > Screenshot for Original and Cloned Home page.
 ![Original Web app homepage](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_landing_original.JPG)  ![Cloned Web app homepage](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_landing_clone.JPG)
+
+
 
 > Screenshot for Original and Cloned Project page.
 
 ![Original project page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_project_original.JPG)  ![Cloned project page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_project_clone.JPG)
 
+
+
 > Screenshot for Original and Cloned Insight page.
 
 ![Original Insight page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_insight_original.JPG)  ![Cloned Insight page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_insight_clone.JPG)
+
+
 
 > Screenshot for Original and Cloned screen responsiveness.
 
