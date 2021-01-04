@@ -1,6 +1,5 @@
 # Toggl-Track-Unit2-Project
-![Toggl Track](https://upload.wikimedia.org/wikipedia/en/7/70/Toggl_%28service%29_Logo.png
-)
+                             ![Toggl Track](https://upload.wikimedia.org/wikipedia/en/7/70/Toggl_%28service%29_Logo.png)
 
 
 ------------------- **INTRODUCTION** ---------------------- 
@@ -14,10 +13,14 @@ The project statement given to us was to create a  dynamic clone of Toggle Track
 3.) Rakesh [GitHub profile](https://github.com/Rakesh-Thampy/)
 
 ----------------- **Comaprison of Original and cloned page** --------------
-
+> Screenshot for Original and Cloned Home page.
 ![Original Web app homepage](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_landing_original.JPG)  ![Cloned Web app homepage](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_landing_clone.JPG)
 
+> Screenshot for Original and Cloned Project page.
+
 ![Original project page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_project_original.JPG)  ![Cloned project page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_project_clone.JPG)
+
+> Screenshot for Original and Cloned Insight page.
 
 ![Original Insight page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_insight_original.JPG)  ![Cloned Insight page](https://github.com/Gayathry7/Toggl-Track-Unit2-Project/blob/main/Screenshot/toggle_insight_clone.JPG)
 
@@ -40,10 +43,17 @@ Flow of webpage- (please note the datas fetched for each sites are being done by
 ---------------------------- **Resources used** ----------------------------------
 Website | detail
 ------------ | -------------
+[MDN web docs](https://developer.mozilla.org/en-US/) | Resources from MDN has helped a lot to understand a varety on new codes
 [W3school](https://www.w3schools.com)  | W3school's resources has been used to get more information.
-[SVGporn](https://svgporn.com/) | SVGporn has been used for images and logos
+[Fullcalnedar](https://fullcalendar.io/) | FullCalendar has been used to integrate the calender.
 [Font Awesome](https://fontawesome.com/) | Fontawesome has been used to get some icons.
-[Google fonts](https://fonts.google.com/)  | Fonts used throughout he page has been taken from Google fonts.
+[Google fonts](https://fonts.google.com/)  | Fonts used throughout the page has been taken from Google fonts.
 [Google](https://google.co.in/) | Google has been used to get some quick info regarding some elements
 [Buffer](https://buffer.com/)  | The page was given us to be replicated and some images have been used from this site.
+
+------------------ **Blog by each team member** -------------------
+
+Gayathry - [blog]()
+Saravana - [blog]()
+Rakesh - [blog](https://rakesh17.hashnode.dev/working-on-a-team-project-as-a-beginner-using-html-css-and-javascript)
 
