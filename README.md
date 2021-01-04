@@ -67,13 +67,12 @@ Flow of webpage- (please note the datas fetched for each sites are being done by
 
 Website | detail
 ------------ | -------------
-[MDN web docs](https://developer.mozilla.org/en-US/) | Resources from MDN has helped a lot to understand a varety on new codes
+[MDN web docs](https://developer.mozilla.org/en-US/) | Resources from MDN has helped a lot to understand a varety on new codes.
 [W3school](https://www.w3schools.com)  | W3school's resources has been used to get more information.
 [Fullcalnedar](https://fullcalendar.io/) | FullCalendar has been used to integrate the calender.
 [Font Awesome](https://fontawesome.com/) | Fontawesome has been used to get some icons.
 [Google fonts](https://fonts.google.com/)  | Fonts used throughout the page has been taken from Google fonts.
-[Google](https://google.co.in/) | Google has been used to get some quick info regarding some elements
-[Buffer](https://buffer.com/)  | The page was given us to be replicated and some images have been used from this site.
+[Google](https://google.co.in/) | Google has been used to get some quick info regarding some elements.
 
 
 ------------------ **Blog by each team member** -------------------
