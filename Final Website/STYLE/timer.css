@@ -130,7 +130,7 @@ body {
 
 /* Css for arrows start here ******************************* */
 .timer__sub {
-    margin-top: 120px;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -264,21 +264,32 @@ body {
     justify-content: space-evenly;
     border-bottom: 1px solid #E8E8E8;
     color: #422A4C;
+    font-size: 14px;
 }
 .timerSubBar >div {
     margin: auto auto;
 }
+.list__description
+{
+    width:20%;
+    overflow: hidden;
+}
+.list__project,
+.list__tag
+{
+    width:12%;
+    overflow: hidden;
+}
 
 .timerSubBar i{
-    font-size: 20px;
-    color: gray;
+    font-size: 15px;
+    color:#f2f2f2;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     margin: 20px 0px 0px 0px;
-    
 }
 
 .dropdown-content {
@@ -288,12 +299,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-.dropdown-content button {
-    color: black;
-    text-decoration: none;
-    display: block;
+    border-radius: 8px;
 }
 
 .dropdown-content button:hover {
@@ -307,11 +313,6 @@ body {
     display: block;
 }
 
-#dropdown_msgs >button{
-    padding: 0;
-    font-size: 16px;
-}
-
 #dropdown_msgs, #dropdown_msgs1{
     display: flex;
     flex-wrap: wrap;
@@ -319,7 +320,6 @@ body {
     font-weight: bold;
     font-size: 15px;
     font-family: sans-serif;
-    /* color: rgb(163, 30, 163); */
 }
 #dropdown_msgs >button, #dropdown_msgs1>button{
     padding: 5px;
@@ -327,6 +327,8 @@ body {
     width: 100%;
     text-align: left;
     border-radius: 5px;
-    color: rgb(27, 117, 83);
+    text-decoration: none;
+    display: block;
+    margin:5px 10px;
 }
 

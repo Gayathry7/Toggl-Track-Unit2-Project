@@ -1,9 +1,20 @@
 var middle_photo = document.querySelector('.timer__middle')
 var timer__arrow = document.querySelector('.timer__arrows')
+var weekview =  document.querySelector(".timer__week");
+
+var dataCheck = JSON.parse(localStorage.getItem("calendar"))
+console.log(dataCheck)
+if(dataCheck != null)
+{
+    loadData()
+    middle_photo.style.display = "none"
+    timer__arrow.style.display = "none"
+    weekview.style.display = "block"
+}
+
 
 var timerStart = document.querySelector(".timer__start");
 var timerStop = document.querySelector(".timer__stop");
-var weekview =  document.querySelector(".timer__week");
 
 var start = document.getElementById('timer__start')
 var stop = document.getElementById('timer__stop')
@@ -17,9 +28,9 @@ start.addEventListener("click",function(){
 
     startTimer();
     timerStart.style.display = "none"
-    timerStop.style.display = "block"
     middle_photo.style.display = "none"
     timer__arrow.style.display = "none"
+    timerStop.style.display = "block"
     weekview.style.display = "block"
     var sendDate = new Date()
     var description = document.querySelector('#timer__input').value.trim()
@@ -110,14 +121,13 @@ function startTimer(){
     },1000)
 }
 
-const cards = document.querySelector("#timer__card");
-
 function loadData(){
     var date = new Date()
     var day = date.getDate();
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
     var today = year +"-"+ month +"-"+ day;
+    const cards = document.querySelector("#timer__card");
 
     var list_data = JSON.parse(localStorage.getItem("calendar"))
 
@@ -127,16 +137,16 @@ function loadData(){
         html += `
         <div class="timerSubBar">
     
-            <div>
+            <div class = "list__description">
                 ${e.description}
             </div>
-            <div>
+            <div class = "list__project">
                 ${e.title}
             </div>
-            <div>
+            <div class = "list__tag">
                 ${e.tag}
             </div>
-            <div>
+            <div class = "list__dollar">
                 <i class='fas fa-dollar-sign' ></i>
             </div>
             <div class="timerSub__tabA">
