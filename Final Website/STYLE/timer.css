@@ -302,6 +302,7 @@ body {
     width:100%;
 }
 
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -314,11 +315,11 @@ body {
 #dropdown_msgs, #dropdown_msgs1{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    /* padding: 10px; */
     font-weight: bold;
     font-size: 15px;
     font-family: sans-serif;
-    color: rgb(163, 30, 163);
+    /* color: rgb(163, 30, 163); */
 }
 #dropdown_msgs >button, #dropdown_msgs1>button{
     padding: 5px;
