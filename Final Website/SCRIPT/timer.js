@@ -1,9 +1,3 @@
-
-
-
-var description = document.querySelector('#timer__input')
-var projectName  = document.querySelector('#dropdown_msgs')
-var tagName = document.querySelector('#dropdown_msgs1')
 var middle_photo = document.querySelector('.timer__middle')
 var timer__arrow = document.querySelector('.timer__arrows')
 
@@ -28,11 +22,38 @@ start.addEventListener("click",function(){
     timer__arrow.style.display = "none"
     weekview.style.display = "block"
     var sendDate = new Date()
-    var project1  = document.querySelector('#dropdown_msgs').textContent.trim();
+    var description = document.querySelector('#timer__input').value.trim()
+    if(document.querySelector('#dropdown_msgs > button') != null)
+    {
+        var projectName  = document.querySelector('#dropdown_msgs > button').textContent.trim()
+    }
+    else
+    {
+        var projectName = "" 
+    }
+    if(document.querySelector('#dropdown_msgs1 > button') != null)
+    {
+        var tagName = document.querySelector('#dropdown_msgs1 > button').textContent.trim()
+    }
+    else
+    {
+        var tagName = ""
+    }
     
-    var obj=[{title: project1, start: sendDate}]
-    obj = JSON.stringify(obj)
-    localStorage.setItem("calendar", obj)
+
+    var getData = JSON.parse(localStorage.getItem("calendar"))
+    if(getData == null)
+    {
+        var list = []
+    }
+    else
+    {
+        list = getData
+    }
+    var obj = {title: projectName, start: sendDate, description : description, tag : tagName}
+    list.push(obj)
+    list = JSON.stringify(list)
+    localStorage.setItem("calendar", list)
 
 })
 
@@ -41,6 +62,11 @@ stop.addEventListener("click",function(){
     min1 = document.querySelector('#min').textContent;
     sec1 = document.querySelector('#sec').textContent;
     end = hrs1 + min1 +sec1
+
+    var getData = JSON.parse(localStorage.getItem("calendar"))
+    getData[getData.length -1].end = end
+    localStorage.setItem("calendar", JSON.stringify(getData))
+
 
     clearTimeout(timer);
     timerStart.style.display = "block"
@@ -85,7 +111,6 @@ function startTimer(){
 }
 
 const cards = document.querySelector("#timer__card");
-let html = "";
 
 function loadData(){
     var date = new Date()
@@ -94,23 +119,28 @@ function loadData(){
     var year = date.getFullYear();
     var today = year +"-"+ month +"-"+ day;
 
-    html += `
+    var list_data = JSON.parse(localStorage.getItem("calendar"))
+
+    var html = "";
+
+    list_data.forEach((e) => {
+        html += `
         <div class="timerSubBar">
     
             <div>
-                ${description.value}
+                ${e.description}
             </div>
             <div>
-                ${projectName.textContent}
+                ${e.title}
             </div>
             <div>
-                ${tagName.textContent}
+                ${e.tag}
             </div>
             <div>
                 <i class='fas fa-dollar-sign' ></i>
             </div>
             <div class="timerSub__tabA">
-                00:00:00  -  ${end}
+                00:00:00  -  ${e.end}
             </div>
     
             <div class="timerSub__tabB">          
@@ -118,10 +148,8 @@ function loadData(){
 
             </div>
         </div>`
-
-        cards.innerHTML = html
-        description.value = ""
-    
+    })
+    cards.innerHTML = html    
 }
 // // <i class='fas fa-folder' ></i>
 
