@@ -77,7 +77,7 @@ Website | detail
 
 ------------------ **Blog by each team member** -------------------
 
-- Gayathry - [blog]()
+- Gayathry - [blog](https://gayathryjm.medium.com/cloning-a-website-in-5-days-by-beginners-is-it-possible-bb694b24344d)
 
 - Saravana - [blog]()
 
